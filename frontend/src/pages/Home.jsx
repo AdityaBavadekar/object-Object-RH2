@@ -16,7 +16,9 @@ function Home() {
 			try {
 				const response = await fetch(`${baseURL}/api/workouts`, {
 					headers: {
-						Authorization: `Bearer ${user.token}`,
+						"Content-Type": "application/json",
+						"Accept": "application/json",
+						'Authorization': `Bearer ${user.token}`,
 					},
 				});
 
