@@ -51,7 +51,7 @@ function WorkoutForm() {
 	const [reps, setReps] = useState("")
 	const [load, setLoad] = useState("")
 	const [error, setError] = useState("")
-	const [isEmpty, setIsEmpty] = useState(true)
+	const [isEmpty, setIsEmpty] = useState(false)
 
 	const { dispatch } = useWorkoutsContext()
 	const { user } = useAuthContext()
