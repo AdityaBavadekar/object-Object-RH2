@@ -137,13 +137,13 @@ function WorkoutForm() {
 						value={load}
 						error={isEmpty && !load}
 					/>
-					<Buton
+					<Button
 						type="submit"
 						variant="outlined"
 						sx={{ my: 2, alignSelf: "flex-start" }}
 					>
 						Add Workout
-					</Buton>
+					</Button>
 
 					{isEmpty && (
 						<div className="mt-4">
