@@ -12,7 +12,7 @@ export const useSignup = () => {
 		setError(null);
 
 		const response = await fetch(`${baseURL}/api/user/signup`, {
-			method: "GET",
+			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
 			},
