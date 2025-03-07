@@ -6,10 +6,16 @@ const helmet = require("helmet")
 const compression = require("compression")
 const workoutRoutes = require("./routes/workouts")
 const userRoutes = require("./routes/user")
+const cors = require("cors")
+
+cors({
+	origin: "*",
+	methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+})
 
 const app = express()
 
-// Security middlewares
+// Security middlewareshelmet
 app.use(helmet())
 app.use(compression())
 
