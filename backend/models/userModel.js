@@ -24,7 +24,7 @@ userSchema.statics.signup = function (email, password) {
 		throw Error("Not a valid email address")
 	}
 
-	if (validator.isStrongPassword(password)) {
+	if (!validator.isStrongPassword(password)) {
 		throw Error("Password is not strong enough")
 	}
 
