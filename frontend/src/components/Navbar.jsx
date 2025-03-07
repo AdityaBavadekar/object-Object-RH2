@@ -78,7 +78,7 @@ function ResponsiveAppBar() {
 				<Box sx={{ flexGrow: 1 }} />
 
 				<ThemeProvider theme={theme}>
-					{!user ? (
+					{user ? (
 						<Button
 							type="submit"
 							variant="outlined"
