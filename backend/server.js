@@ -8,12 +8,12 @@ const workoutRoutes = require("./routes/workouts")
 const userRoutes = require("./routes/user")
 const cors = require("cors")
 
-cors({
+const app = express()
+
+app.use(cors({
 	origin: "*",
 	methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
-})
-
-const app = express()
+}))
 
 // Security middlewareshelmet
 app.use(helmet())
